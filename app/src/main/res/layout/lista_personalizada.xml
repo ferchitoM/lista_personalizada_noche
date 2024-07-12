@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:scaleType="centerCrop"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/perfil6" />
 
         <LinearLayout
             android:layout_width="match_parent"
