@@ -31,12 +31,16 @@ public class AdapterListaPersonalizada extends ArrayAdapter<Persona> {
         TextView firstName  = convertView.findViewById(R.id.firt_name);
         TextView familyName = convertView.findViewById(R.id.family_name);
         TextView email      = convertView.findViewById(R.id.email);
+        ImageView avatar    = convertView.findViewById(R.id.avatar);
 
         Persona item = getItem(position);
 
         int idRecurso = context.getResources().getIdentifier(item.image, "drawable", context.getPackageName());
-
         image.setImageResource(idRecurso);
+
+        idRecurso = context.getResources().getIdentifier(item.archivo_avatar, "drawable", context.getPackageName());
+        avatar.setImageResource(idRecurso);
+
         firstName.setText(item.firstName);
         familyName.setText(item.familyName);
         email.setText(item.email);
